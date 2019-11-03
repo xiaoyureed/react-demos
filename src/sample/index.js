@@ -17,6 +17,12 @@ import FormSubmitAntd from './FormSubmitAntd';
 import HorizontalLogin from './Antd';
 import './index.css';
 import "antd/dist/antd.css";
+import LayoutCustom from './LayoutCustom';
+import LayoutCustom2 from './LayoutCustom2';
+import LayoutCustom3 from './LayoutCustom3';
+import PortalSample from './PortalSample';
+import PortalAntd from './PortalAntd';
+import RefSample from './RefSample';
 
 const routeMap = {
   'todo': Todo,
@@ -34,6 +40,12 @@ const routeMap = {
   'form-submit': FormSubmit,
   'form-submit-antd': FormSubmitAntd,
   'horizontal-login': HorizontalLogin,
+  'layout-custom': LayoutCustom,
+  'layout-custom2': LayoutCustom2,
+  'layout-custom3': LayoutCustom3,
+  'portal-sample': PortalSample,
+  'portal-antd': PortalAntd,
+  'ref-sample': RefSample,
 };
 
 export default class App extends React.PureComponent {
