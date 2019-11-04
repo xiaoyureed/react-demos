@@ -50,8 +50,12 @@ export class Counter extends React.Component {
 }
 
 /**
- * bind state data of which wo take care to props
- * 绑定state中我们关心的数据到 props (无能整个 store 绑定到 props, 因为 state 中和当前组件无关的数据更新无需出发组件重绘
+ * bind state data of which we take care to props
+ * 绑定state中我们关心的数据到 props (不能整个 store 绑定
+ * 到 props, 因为 state 中和当前组件无关的数据更新无需出发组件重绘)
+ * 
+ * 在组件中可以通过 props 拿到 这里绑定的数据
+ * 
  * @param state store.getState()
  */
 function mapStateToProps(state) {

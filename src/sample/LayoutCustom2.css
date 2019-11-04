@@ -1,4 +1,4 @@
-.container {
+.bb {
   height: 500px;
   width: 400;
   position: relative;
@@ -7,14 +7,14 @@
   padding-left: 200px;
 }
 
-.container .header {
+.bb .header {
   /* header 就在最顶部, 无需 绝对定位 */
   /* position: absolute; */
   line-height: 60px;
   border-bottom: 2px solid #fff;
 }
 
-.container .sider {
+.bb .sider {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -23,7 +23,7 @@
   border-right: 2px solid #fff;
 }
 
-.container .content {
+.bb .content {
   position: absolute;
   left: 200px;
   right: 0;
@@ -32,7 +32,7 @@
   border: 1px solid black;
 }
 
-.container .footer {
+.bb .footer {
   position: absolute;
   line-height: 60px;
   left: 200px;

@@ -3,7 +3,7 @@ import './LayoutCustom2.css';
 
 const LayoutCustom2 = () => {
   return (
-    <div className="container">
+    <div className="bb">
       <div className="header">header</div>
       <div className="sider">sider</div>
       <div className="content">content</div>
