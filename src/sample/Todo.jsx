@@ -31,6 +31,7 @@ export class Todo extends React.PureComponent {
   render() {
     return (
       <div>
+        <p>在 state component 中 state, 函数绑定的简单写法</p>
         <Todos todos={this.state.todos} />
         <div>
           <input value={this.state.input} onChange={this.handleInput}></input> {' '}

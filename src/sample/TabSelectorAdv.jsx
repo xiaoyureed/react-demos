@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
+import './TabSelector.css';
 
 class TabSelectorAdv extends PureComponent {
   static propTypes = {
@@ -59,6 +60,7 @@ export default class AdvancedTabSelectorSample extends PureComponent {
   render() {
     return (
       <div>
+        <p>父子组件的数据传递 (props)</p>
         <h3>Select color: </h3>
         <TabSelectorAdv
           options={colors}

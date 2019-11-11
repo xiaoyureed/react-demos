@@ -39,6 +39,7 @@ export class Counter extends React.Component {
     const { count, plusOne, minusOne } = this.props;
     return (
       <div className="counter">
+        <p>redux + react-redux 合用 (主要用到了后者的 Provider 和 connect)</p>
         <button onClick={minusOne}>-</button>
         <span style={{ display: "inline-block", margin: "0 10px" }}>
           {count}
@@ -56,7 +57,7 @@ export class Counter extends React.Component {
  * 
  * 在组件中可以通过 props 拿到 这里绑定的数据
  * 
- * @param state store.getState()
+ * @param {object} state store.getState()
  */
 function mapStateToProps(state) {
   return {

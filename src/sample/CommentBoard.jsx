@@ -34,7 +34,7 @@ const CommentList = props => {
       {props.comments.map((comment, key) => <Item key={key} comment={comment} />)}
     </div>
   );
-}
+};
 
 const CommentInput = () => {
   const handleSubmit = event => {

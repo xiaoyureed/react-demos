@@ -51,6 +51,7 @@ class LocaledButtons extends React.Component {
 
 export default () => (
   <div>
+    <p>React.createContext 实例</p>
     <LocaleProvider>
       <div>
         <br />

@@ -65,7 +65,7 @@ function run() {
 }
 export default () => (
   <div>
+    <p>纯 redux, 没有用 connect</p>
     <button onClick={run}>Run</button>
-    <p>* 请打开控制台查看运行结果</p>
   </div>
 );

@@ -13,7 +13,10 @@ const FunctionAsSonComponent = (props) => {
     <MyComponent>
       {(name) => {
         return (
-          <div>{name}</div>
+          <div>
+            <p>function 作为 son component</p>
+            {name}
+          </div>
         );
       }}
     </MyComponent>

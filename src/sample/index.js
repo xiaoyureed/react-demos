@@ -24,6 +24,7 @@ import PortalSample from './PortalSample';
 import PortalAntd from './PortalAntd';
 import RefSample from './RefSample';
 import DragSample from './DragSample';
+import Flux from "./Flux";
 
 const routeMap = {
   'todo': Todo,
@@ -34,6 +35,7 @@ const routeMap = {
   'tab-selector-adv': AdvancedTabSelectorSample,
   'locale-sample': LocaleSample,
   'pure-redux': PureRedux,
+  'flux': Flux,
   'counter-sample': CounterSample,
   'router-sample': RouterSample,
   'router-params': RouterParams,

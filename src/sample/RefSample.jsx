@@ -3,7 +3,7 @@ import React from 'react';
 class RefSample extends React.PureComponent {
 
   componentDidMount() {
-    const ref1 = this.refs.hello.innerText;
+    const ref1 = this.refs.hello.innerText;// deprecated
     const ref2 = this.node.innerText;
     console.log(ref1);
     console.log(ref2);

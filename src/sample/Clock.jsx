@@ -32,6 +32,9 @@ export default class Clock extends React.PureComponent {
   render() {
     return (
       <div className="container">
+        <p>生命周期方法</p>
+        <p>定时器</p>
+        <p>class 的 constructor 方法</p>
         <div className="content">
           <h1>Hello World.</h1>
           <h2>{this.state.date.toLocaleTimeString()}</h2>
