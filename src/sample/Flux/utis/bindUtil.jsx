@@ -1,11 +1,11 @@
-import {Dispatcher} from 'flux';
-
-function bindDispatcher(action) {
-  let dispatcher = new Dispatcher();
-  dispatcher.dispatch({
-    type: action.type,
-    payload: action.payload,
-  });
+function bindDispatcherAction(action, dispatcher) {
+  function bind() {
+    dispatcher.handleAction({
+      type: action.type,
+      payload: action.payload,
+    });
+  }
+  return bind;
 }
 
-export {bindDispatcher};
+export {bindDispatcherAction};

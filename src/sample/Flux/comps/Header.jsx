@@ -1,4 +1,5 @@
 import React from "react";
+import {addTodo} from "../actions/todoAction";
 
 class Header extends React.Component {
   state = {
@@ -12,7 +13,8 @@ class Header extends React.Component {
   };
 
   handleClick = ev => {
-
+    // 希望改变state, 只能发出action, 这里传入text, 在内部封装为action
+    addTodo(this.state.input);
     this.setState({
       input: '',
     });
@@ -25,7 +27,8 @@ class Header extends React.Component {
           <div>
             <input type="text" value={this.state.input}
                    placeholder="input sth pls..." onChange={this.handleChange}/>
-            <button onClick={this.handleClick}/>
+            {' '}
+            <button onClick={this.handleClick}>submit</button>
           </div>
         </div>
     );
