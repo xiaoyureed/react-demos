@@ -1,9 +1,9 @@
 import {bindDispatcherAction} from "../utis/bindUtil";
-import {ADD_TODO} from "./actionType";
+import {ADD_TODO, DELETE_TODO} from "./actionType";
 import appDispatcher from '../dispatcher';
 
 /**
- * add todos
+ * add todoCreators
  * @param {string} text
  */
 export const addTodo = text => {
@@ -15,3 +15,11 @@ export const addTodo = text => {
   }, appDispatcher)();
 };
 
+export const deleteTodo = text => {
+  bindDispatcherAction({
+    type: DELETE_TODO,
+    payload: {
+      text: text,
+    }
+  }, appDispatcher)();
+};
