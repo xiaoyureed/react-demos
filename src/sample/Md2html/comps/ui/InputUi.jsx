@@ -30,7 +30,7 @@ const InputUi = ({md, onChange}) => (
     // <textarea className={`${styles.input} form-control`} onChange={onChange} value={value} />
 
     <div className={css.input}>
-      <p>markdown (redux + react-redux)</p>
+      <p>markdown (redux + react-redux + redux-logger`, 没有 `redux-action`)</p>
       <textarea className={css.text} onChange={onChange} value={md}/>
     </div>
 );

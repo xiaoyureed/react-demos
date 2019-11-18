@@ -26,6 +26,7 @@ import RefSample from './RefSample';
 import DragSample from './DragSample';
 import Flux from "./Flux";
 import Md2html from './Md2html';
+import TodoImutable from "./TodoImutable";
 
 const routeMap = {
   'todo': Todo,
@@ -37,6 +38,7 @@ const routeMap = {
   'locale-sample': LocaleSample,
   'pure-redux': PureRedux,
   'flux': Flux,
+  'todo-imutable': TodoImutable,
   'md2html': Md2html,
   'counter-sample': CounterSample,
   'router-sample': RouterSample,
