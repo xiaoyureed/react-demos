@@ -1,0 +1,11 @@
+.input {
+  flex: 1;
+  border: 1px solid green;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-direction: column;
+}
+
+.text {
+  flex: 1;
+}

@@ -1,0 +1,11 @@
+.output {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}

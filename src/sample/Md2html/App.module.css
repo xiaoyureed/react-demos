@@ -1,0 +1,8 @@
+.app {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  height: 100%;
+  width: 100%;
+}

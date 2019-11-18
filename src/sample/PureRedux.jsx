@@ -11,7 +11,7 @@ function run() {
 
   // reducer
   // 代表 state 的处理逻辑
-  const counter = (state = initialState, action) => {
+  const counterReducer = (state = initialState, action) => {
     switch (action.type) {
       case "PLUS_ONE":
         return { count: state.count + 1 };
@@ -27,15 +27,15 @@ function run() {
     return state;
   };
 
-  const todos = (state = {}) => state; // 待添加到 Store 中的新节点
+  const todosReducer = (state = {}) => state; // 待添加到 Store 中的新节点
 
   // Create store
   const store = createStore(
     // combineReducers 可以帮助维护多个 state 进 store 中
     //这样 Store 中就有 两个节点了
     combineReducers({
-      todos,
-      counter
+      todos: todosReducer,
+      counter: counterReducer
     })
   );
 
@@ -55,11 +55,13 @@ function run() {
 
   // bindActionCreators 是 redux 提供的工具函数, 将 dispatcher 绑定到 action 内部
   // 省掉了手动 dispatch 这直接调用action 即可
-  plusOne = bindActionCreators(plusOne, store.dispatch);
+  const plusOneWithDispatcher = bindActionCreators(plusOne, store.dispatch);
 
   store.subscribe(() => console.log(store.getState()));
+
   // store.dispatch(plusOne());
-  plusOne();
+  plusOneWithDispatcher();
+
   store.dispatch(minusOne());
   store.dispatch(customCount(5));
 }
