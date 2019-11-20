@@ -1,5 +1,6 @@
 {
-  "name": "blog-app",
+  "name": "react-demos",
+  "homepage": "https://xiaoyureed.github.io/react-demos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
