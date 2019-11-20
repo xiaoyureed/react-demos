@@ -1,6 +1,5 @@
 import { createStore, applyMiddleware } from 'redux';
-// https://github.com/evgenyrodionov/redux-logger
-import { logger, createLogger } from 'redux-logger';
+import { logger, createLogger } from 'redux-logger';// https://github.com/evgenyrodionov/redux-logger
 import rootReducer from "./reducers";
 // import Immutable from 'immutable';
 // import todoState from '../constants/models';

@@ -1,8 +1,8 @@
-import Immutable from 'immutable';
+import {fromJS} from 'immutable';
 /**
  * 整个app的state
  */
-const todoState = Immutable.fromJS({
+const todoState = fromJS({
   todos: [],
   todo: {
     id: '',

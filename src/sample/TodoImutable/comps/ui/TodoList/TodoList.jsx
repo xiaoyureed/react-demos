@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './TodoList.module.css';
 
-const TodoList = ({ todos, onDeleteTodo }) => (
+const TodoList = ({todos, onDeleteTodo}) => (
     <div className="panel panel-primary">
       <div align="center" className={`${css.title} panel-heading`}>
         todo
@@ -16,8 +16,8 @@ const TodoList = ({ todos, onDeleteTodo }) => (
                     delete
                   </button>
                   <span className={css.todoText}>
-                {todo.get('text')}
-              </span>
+                    {todo.get('text')}
+                  </span>
                 </li>
             )).toJS()
           }

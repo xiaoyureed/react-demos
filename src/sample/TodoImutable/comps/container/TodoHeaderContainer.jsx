@@ -1,9 +1,11 @@
 import { connect } from 'react-redux';
 import {changeText, createTodo} from "../../actions";
 import TodoHeader from "../ui/TodoHeader";
+import {getIn} from "immutable";
+
 
 const mapStateToProps = state => ({
-  todo: state.getIn(['todo', 'todo']), // 将当前组件需要的state匹配到props中给comp用
+  todo: getIn(state,['todo'], null), // 将当前组件需要的state匹配到props中给comp用
 });
 
 const mapDispatchToProps = dispatch => ({
